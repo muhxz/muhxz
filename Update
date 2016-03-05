@@ -1,0 +1,1416 @@
+#!/bin/bash
+# Coded by Muhxz
+# Programa para atualizar e baixar pacotes, programas e scripts!/
+#  Versao: 1.2 (Updated on 12.26.2015)
+##########################################################################################################################################################################################################################################################################################
+#
+#                                      Bugs ?  Please report of me! send me on eth0.db0@gmail.com
+#
+#####################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################################
+
+
+sleep 1
+clear
+
+echo 
+echo -e " \033[01;31m######################################################################\033[01;31m"
+echo -e " \033[01;31m[!]                Update Tools & Packages                         [!] \033[01;31m"
+echo -e " \033[01;31m######################################################################\033[01;31m"
+echo
+echo -e " \033[01;33m######################################################################\033[01;33m"
+echo -e " \033[01;33m[!] Selecione a Opcao para atualizar e pressione ENTER             [!]"
+echo -e " \033[01;33m######################################################################\033[01;33m"
+echo -e " \033[01;32m[1]\033[01;32m                       Atualizar o Aircrack-ng                  [-]"
+echo -e " \033[01;32m[2]\033[01;32m                       Atualizar o Mdk3                         [-]"
+echo -e " \033[01;32m[3]\033[01;32m                       Atualizar o Metasploit                   [-]"
+echo -e " \033[01;32m[4]\033[01;32m                       Atualizar o Reaver                       [-]"
+echo -e " \033[01;32m[5]\033[01;32m                       Atualizar o Wifite                       [-]"
+echo -e " \033[01;32m[6]\033[01;32m               	   Atualizar o TOR                          [-]"
+echo -e " \033[01;32m[7]\033[01;32m                       Atualizar o IpTraf                       [-]"
+echo -e " \033[01;32m[8]\033[01;32m                       Atualizar o Nmap                         [-]"
+echo -e " \033[01;32m[9]\033[01;32m                       Atualizar o Maltego                      [-]"
+echo -e " \033[01;32m[10]\033[01;32m                      Atualizar o Hping3                       [-]"
+echo -e " \033[01;32m[11]\033[01;32m                      Atualizar o T50                          [-]"
+echo -e " \033[01;32m[12]\033[01;32m                      Atualizar o WireShark                    [-]"
+echo -e " \033[01;32m[13]\033[01;32m                      Atualizar o NetDiscover                  [-]"
+echo -e " \033[01;32m[14]\033[01;32m                      Atualizar o Anonsurf                     [-]"
+echo -e " \033[01;32m[15]\033[01;32m                      Atualizar o Torsocks                     [-]"
+echo -e " \033[01;32m[16]\033[01;32m                      Atualizar o Mitmproxy                    [-]"
+echo -e " \033[01;32m[17]\033[01;32m                      Atualizar o Hydra                        [-]"
+echo -e " \033[01;32m[18]\033[01;32m                      Atualizar o Ettercap Graphical           [-]"
+echo -e " \033[01;32m[19]\033[01;32m                      Atualizar o Websploit                    [-]"
+echo -e " \033[01;33m######################################################################\033[01;33m"
+echo -e " \033[01;33m[!] Para selecionar digite o numero. Para mostrar outras opcoes de [!]"
+echo -e " \033[01;33m[!] atualizacao ou download digite P (Maiusculo) e pressione ENTER [!]"
+echo -e " \033[01;33m[!] Para baixar scripts digite S (Maiusculo) para entrar na pagina [!]"
+echo -e " \033[01;33m######################################################################\033[01;33m"
+echo 
+echo "Digite qual programa deseja atualizar ou baixar: "
+read opcao
+
+
+
+if [ "$opcao" = "P" ]
+    then
+
+	sleep 1
+	clear
+	echo
+	echo -e " \033[01;31m######################################################################\033[01;31m"
+	echo -e " \033[01;31m[!]                Update Tools & Packages   - Page 2              [!] \033[01;31m"
+	echo -e " \033[01;31m######################################################################\033[01;31m"
+	echo
+	echo -e " \033[01;33m######################################################################\033[01;33m"
+	echo -e " \033[01;33m[!] Selecione a Opcao para atualizar e pressione ENTER             [!]"
+	echo -e " \033[01;33m######################################################################\033[01;33m"
+	echo -e " \033[01;32m[20]\033[01;32m                       Atualizar o Apache Server               [-]"
+	echo -e " \033[01;32m[21]\033[01;32m                       Atualizar o SSH Service                 [-]"
+	echo -e " \033[01;32m[22]\033[01;32m                       Atualizar o SET                         [-]"
+	echo -e " \033[01;32m[23]\033[01;32m                       Atualizar o STARTX                      [-]"
+	echo -e " \033[01;32m[24]\033[01;32m                       Atualizar o Airmode                     [-]"
+	echo -e " \033[01;32m[25]\033[01;32m                       Atualizar o Armitage                    [-]"
+	echo -e " \033[01;32m[26]\033[01;32m                       Atualizar o Burpsuite                   [-]"
+	echo -e " \033[01;32m[27]\033[01;32m                       Atualizar o w3af                        [-]"
+	echo -e " \033[01;32m[28]\033[01;32m                       Atualizar o John                        [-]"
+	echo -e " \033[01;32m[29]\033[01;32m                       Atualizar o p0f                         [-]"
+	echo -e " \033[01;32m[30]\033[01;32m                       Atualizar o HexChat                     [-]"
+	echo -e " \033[01;32m[31]\033[01;32m                       Atualizar o SQLMap                      [-]"
+	echo -e " \033[01;32m[32]\033[01;32m                       Atualizar o WpScan                      [-]"
+	echo -e " \033[01;32m[33]\033[01;32m                       Atualizar o Nikto                       [-]"
+	echo -e " \033[01;32m[34]\033[01;32m                       Atualizar o Xprobe2                     [-]"
+	echo -e " \033[01;32m[35]\033[01;32m                             Update                            [-]"
+	echo -e " \033[01;32m[36]\033[01;32m                             Upgrade                           [-]"
+	echo -e " \033[01;32m[37]\033[01;32m                         Atualizar Tudo                        [-]"
+        echo -e " \033[01;32m[38]\033[01;32m                       Instalar o MITMf                        [-]"
+        echo -e " \033[01;32m[39]\033[01;32m                       Instalar o inurlBR Scanner              [-]"
+	echo -e " \033[01;32m[99]\033[01;32m                              Sair                             [*]"
+	echo -e " \033[01;33m######################################################################\033[01;33m"
+	echo -e " \033[01;33m[!]                  Para selecionar digite o numero.              [!]"
+	echo -e " \033[01;33m######################################################################\033[01;33m"
+	echo
+	echo "Digite qual programa deseja atualizar ou baixar: "
+	read opcao1
+
+
+	if [ "$opcao1" = "1" ]
+    then
+	sleep 1
+	clear
+	sleep 1
+	echo 
+	echo "Atualizando ou Baixando Aircrack-ng..."
+	sleep 1
+	echo
+	apt-get install aircrack-ng
+	echo "Programa atualizado ou Baixado com Sucesso!"
+        exit;	
+
+	elif [ "$opcao1" = "2" ]
+    then
+	sleep 1
+	clear
+	sleep 1
+	echo
+	echo "Atualizando ou Baixando Mdk3..."
+	sleep 1
+	echo
+	apt-get install mdk3
+	echo "Programa atualizado ou Baixado com Sucesso !"
+	exit;
+
+	elif [ "$opcao1" = "3" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Metasploit Framework..."
+        sleep 1
+        echo
+        apt-get install metasploit-framework
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "4" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Reaver..."
+        sleep 1
+        echo
+        apt-get install reaver
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "5" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Wifite..."
+        sleep 1
+        echo
+        apt-get install wifite
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "6" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando TOR..."
+        sleep 1
+        echo
+        apt-get install tor
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "7" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando IpTraf..."
+        sleep 1
+        echo
+        apt-get install iptraf
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "8" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Nmap..."
+        sleep 1
+        echo
+        apt-get install nmap
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "9" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Maltego..."
+        sleep 1
+        echo
+        apt-get install maltego
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "10" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando hping3..."
+        sleep 1
+        echo
+        apt-get install hping3
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "11" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando T50..."
+        sleep 1
+        echo
+        apt-get install t50
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "12" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Wireshark..."
+        sleep 1
+        echo
+        apt-get install wireshark
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	 elif [ "$opcao1" = "13" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando NetDiscover..."
+        sleep 1
+        echo
+        apt-get install netdiscover
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+
+
+
+	elif [ "$opcao1" = "14" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Anonsurf..."
+        sleep 1
+        echo
+        apt-get install anon-surf
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "15" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Tor Socks..."
+        sleep 1
+        echo
+        apt-get install torsocks
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "16" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando MitmProxy..."
+        sleep 1
+        echo
+        apt-get install mitmproxy
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "17" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Hydra..."
+        sleep 1
+        echo
+        apt-get install hydra
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "18" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Ettercap Graphical..."
+        sleep 1
+        echo
+        apt-get install ettercap-graphical
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	 elif [ "$opcao1" = "39" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Instalando o inurlBR Scanner..."
+        sleep 1
+        echo
+        git clone https://github.com/googleinurl/SCANNER-INURLBR.git inurlbr
+        echo
+	echo "[i] Para iniciar o programa entre na pasta que ele criou, com o nome: inurlbr ..."
+	echo
+        echo "Executando comando LS;"
+        echo
+	ls
+        echo
+        exit;
+
+
+
+
+
+	elif [ "$opcao1" = "19" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando WebSploit..."
+        sleep 1
+        echo
+        apt-get install websploit
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "20" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Apache Server..."
+        sleep 1
+        echo
+        apt-get install apache2
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "21" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando SSH Service..."
+        sleep 1
+        echo
+        apt-get install ssh
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "22" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando SET (Setoolkit)..."
+        sleep 1
+        echo
+        apt-get install set
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "23" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando STARTX..."
+        sleep 1
+        echo
+        apt-get install x-window-system
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "24" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Airmode..."
+        sleep 1
+        echo
+        apt-get install airmode
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "25" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Armitage..."
+        sleep 1
+        echo
+        apt-get install armitage
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "26" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Burpsuite..."
+        sleep 1
+        echo
+        apt-get install burpsuite
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "27" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando w3af..."
+        sleep 1
+        echo
+        apt-get install w3af
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "28" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando John..."
+        sleep 1
+        echo
+        apt-get install john
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "29" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando p0f..."
+        sleep 1
+        echo
+        apt-get install p0f
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "30" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando HexChat..."
+        sleep 1
+        echo
+        apt-get install hexchat
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "31" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando SQLMap..."
+        sleep 1
+        echo
+        apt-get install sqlmap
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "32" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando WpScan..."
+        sleep 1
+        echo
+        apt-get install wpscan
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "33" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Nikto..."
+        sleep 1
+        echo
+        apt-get install nikto
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+        elif [ "$opcao1" = "38" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando o MITMf ( Man-In-The-Middle Framework"
+        sleep 1
+        echo
+        echo "Downloading packets ....."
+        echo
+        apt-get install python-dev python-setuptools libpcap0.8-dev libnetfilter-queue-dev libssl-dev libjpeg-dev li$
+        git clone https://github.com/byt3bl33d3r/MITMf
+        cd MITMf && git submodule init && git submodule update --recursive
+        pip install -r requirements.txt
+        echo
+        echo "Programa instalado com sucesso! "
+        echo " [i] Para executar o programa, entre dentro da pasta que ele criou com o nome: mitmf"
+        echo
+        ls
+        echo
+
+        exit;
+
+
+	elif [ "$opcao1" = "bug" ]
+	    then
+		clear
+		echo "Bugs? Send me on eth0.db0@gmail.com"
+		echo " -- Thanks for use this program \o/ "
+		exit;
+
+	elif [ "$opcao1" = "34" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Xprobe2..."
+        sleep 1
+        echo
+        apt-get install xprobe2
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "35" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando Pacotes..."
+        sleep 1
+        echo
+        apt-get update
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "36" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Fazendo Upgrade..."
+        sleep 1
+        echo
+        apt-get upgrade
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+	elif [ "$opcao1" = "99" ]
+    	    then
+		clear
+		exit;
+
+	elif [ "$opcao1" = "37" ]
+    then
+	sleep 2
+	clear
+	sleep 1
+	echo 
+	echo "Atualizando ou Baixando Tudo..."
+	sleep 3
+	apt-get install aircrack-ng
+	echo -e " \033[01;32m[*] Aircarck-ng Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install mdk3
+	echo -e " \033[01;32m[*] Mdk3 Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install metasploit-framework
+	echo -e " \033[01;32m[*] Metasploit Framework Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install reaver
+	echo -e " \033[01;32m[*] Reaver Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install wifite
+	echo -e " \033[01;32m[*] Wifite Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install tor
+	echo -e " \033[01;32m[*] TOR Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install iptraf
+	echo -e " \033[01;32m[*] IpTraf Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install nmap
+	echo -e " \033[01;32m[*] Nmap Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install maltego
+	echo -e " \033[01;32m[*] Maltego Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install hping3
+	echo -e " \033[01;32m[*] Hping3 Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install t50
+	echo -e " \033[01;32m[*] T50 Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install wireshark
+	echo -e " \033[01;32m[*] Wireshark Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install netdiscover
+	echo -e " \033[01;32m[*] NetDiscover Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install anonsurf
+	echo -e " \033[01;32m[*] Anon-Surf Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install tor-socks
+	echo -e " \033[01;32m[*] Tor-Socks Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install mitmproxy
+	echo -e " \033[01;32m[*] Mitm-Proxy Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install hydra
+	echo -e " \033[01;32m[*] Hydra Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install ettercap-graphical
+	echo -e " \033[01;32m[*] Ettercap Graphical Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install websploit
+	echo -e " \033[01;32m[*] Websploit Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install apache2
+	echo -e " \033[01;32m[*] Apache Server Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install ssh
+	echo -e " \033[01;32m[*] SSH Service Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install x-window-system
+	echo -e " \033[01;32m[*] STARTX Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install airmode
+	echo -e " \033[01;32m[*] Airmode Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install armitage
+	echo -e " \033[01;32m[*] Armitage Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install burpsuite
+	echo -e " \033[01;32m[*] Burpsuite Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install w3af
+	echo -e " \033[01;32m[*] w3af Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install john
+	echo -e " \033[01;32m[*] John Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install p0f
+	echo -e " \033[01;32m[*] p0f Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install hexchat
+	echo -e " \033[01;32m[*] HexChat Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install sqlmap
+	echo -e " \033[01;32m[*] SQLMap Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install wpscan
+	echo -e " \033[01;32m[*] WpScan Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install nikto
+	echo -e " \033[01;32m[*] Nikto Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install xprobe2
+	echo -e " \033[01;32m[*] Xprobe2 Baixado ou Atualizado com Sucesso!\033[01;32m"
+	echo
+	sleep 2
+	echo
+	echo -e " \033[01;32m[*] Atualizando Pacotes !\033[01;32m"
+	echo
+	apt-get update
+	echo
+	echo
+	sleep 2
+	echo -e " \033[01;32m[*] Fazendo Upgrade !\033[01;32m"
+	echo
+	apt-get upgrade
+	echo
+	echo
+	sleep 2
+	echo
+	echo
+	echo -e " \033[01;36m [#] Programas baixados ou Atualizados com Sucesso !!\033[01;36m"
+	echo -e " \033[01;36m [#] Encerrando Programa .. !!\033[01;36m"
+	echo
+	sleep 3
+	exit;
+	
+    else
+        echo "Entrada Invalida!"
+        exit;
+	
+fi	
+
+
+elif [ "$opcao" = "S" ]
+    then
+
+	sleep 1
+	clear
+	echo
+	echo -e " \033[01;31m######################################################################\033[01;31m"
+	echo -e " \033[01;31m[!]                          Download Scripts                      [!] \033[01;31m"
+	echo -e " \033[01;31m######################################################################\033[01;31m"
+	echo
+	echo -e " \033[01;33m######################################################################\033[01;33m"
+	echo -e " \033[01;33m[!] Selecione a Opcao para baixar e pressione ENTER                [!]"
+	echo -e " \033[01;33m######################################################################\033[01;33m"
+	echo -e " \033[01;32m[1]\033[01;32m                 \033[01;36m[PHP]\033[01;32m Brute Forms by Google INURL              [-]"
+        echo -e " \033[01;32m[2]\033[01;32m                 \033[01;36m[BASH]\033[01;32m Repositories by Muhxz                   [-]"
+        echo -e " \033[01;32m[3]\033[01;32m                 \033[01;36m[PERL]\033[01;32m Facebook brute force by Muhxz           [-]"
+	echo -e " \033[01;32m[99]\033[01;32m                              Sair                             [*]"
+	echo -e " \033[01;33m######################################################################\033[01;33m"
+	echo -e " \033[01;33m[!]                  Para selecionar digite o numero.              [!]"
+	echo -e " \033[01;33m######################################################################\033[01;33m"
+	echo
+	echo "Digite qual script deseja baixar: "
+	read script
+
+	if [ "$script" = "1" ]
+            then
+		    echo "Baixando script..."
+		    wget http://pastebin.com/raw/rTD0eyCJ
+		    mv rTD0eyCJ bruteforms.php
+		    chmod +x bruteforms.php
+		    echo
+		    echo "Script baixado com sucesso !"
+		    exit;
+	elif [ "$script" = "2" ]
+		then
+		    echo "Baixando script..."
+		    wget http://pastebin.com/raw/LD06uriz
+		    mv LD06uriz repositories.sh
+		    chmod +x repositories.sh
+		    echo
+		    echo "Script baixado com sucesso !"
+                    exit;
+        elif [ "$script" = "3" ]
+                then
+                    echo "Baixando script..."
+                    wget http://pastebin.com/raw/LkrNk517
+                    mv LkrNk517 facebrute.pl
+                    echo
+                    echo "Script baixado com sucesso !"
+		    exit;
+
+        elif [ "$script" = "99" ]
+                then
+                    clear
+                    exit;
+	fi
+
+
+elif [ "$opcao" = "1" ]
+    then
+	sleep 1
+	clear
+	sleep 1
+	echo 
+	echo "Atualizando ou Baixando Aircrack-ng..."
+	sleep 1
+	echo
+	apt-get install aircrack-ng
+	echo "Programa atualizado ou Baixado com Sucesso!"
+        exit;	
+
+elif [ "$opcao" = "2" ]
+    then
+	sleep 1
+	clear
+	sleep 1
+	echo
+	echo "Atualizando ou Baixando Mdk3..."
+	sleep 1
+	echo
+	apt-get install mdk3
+	echo "Programa atualizado ou Baixado com Sucesso !"
+	exit;
+
+elif [ "$opcao" = "3" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Metasploit Framework..."
+        sleep 1
+        echo
+        apt-get install metasploit-framework
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "4" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Reaver..."
+        sleep 1
+        echo
+        apt-get install reaver
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "5" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Wifite..."
+        sleep 1
+        echo
+        apt-get install wifite
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "6" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando TOR..."
+        sleep 1
+        echo
+        apt-get install tor
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "7" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando IpTraf..."
+        sleep 1
+        echo
+        apt-get install iptraf
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "8" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Nmap..."
+        sleep 1
+        echo
+        apt-get install nmap
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "9" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Maltego..."
+        sleep 1
+        echo
+        apt-get install maltego
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "10" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando hping3..."
+        sleep 1
+        echo
+        apt-get install hping3
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+ elif [ "$opcao" = "39" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Instalando o inurlBR Scanner..."
+        sleep 1
+        echo
+        git clone https://github.com/googleinurl/SCANNER-INURLBR.git inurlbr
+        echo 
+        echo "[i] Para iniciar o programa entre na pasta que ele criou, com o nome: inurlbr ..."
+        echo
+	echo "Executando comando LS;"
+	ls
+        echo
+        exit;
+
+elif [ "$opcao" = "11" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando T50..."
+        sleep 1
+        echo
+        apt-get install t50
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "12" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Wireshark..."
+        sleep 1
+        echo
+        apt-get install wireshark
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+ elif [ "$opcao" = "13" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando NetDiscover..."
+        sleep 1
+        echo
+        apt-get install netdiscover
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+
+
+
+
+elif [ "$opcao" = "14" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Anonsurf..."
+        sleep 1
+        echo
+        apt-get install anon-surf
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "15" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Tor Socks..."
+        sleep 1
+        echo
+        apt-get install torsocks
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "16" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando MitmProxy..."
+        sleep 1
+        echo
+        apt-get install mitmproxy
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "17" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Hydra..."
+        sleep 1
+        echo
+        apt-get install hydra
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "38" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando o MITMf ( Man-In-The-Middle Framework"
+        sleep 1
+        echo
+        echo "Downloading packets ....."
+        echo
+        apt-get install python-dev python-setuptools libpcap0.8-dev libnetfilter-queue-dev libssl-dev libjpeg-dev li$
+        git clone https://github.com/byt3bl33d3r/MITMf
+        cd MITMf && git submodule init && git submodule update --recursive
+        pip install -r requirements.txt
+        echo
+        echo "Programa instalado com sucesso! "
+        echo " [i] Para executar o programa, entre dentro da pasta que ele criou com o nome: mitmf"
+        echo
+        ls
+        echo
+
+        exit;
+
+elif [ "$opcao" = "18" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Ettercap Graphical..."
+        sleep 1
+        echo
+        apt-get install ettercap-graphical
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "19" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando WebSploit..."
+        sleep 1
+        echo
+        apt-get install websploit
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "20" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Apache Server..."
+        sleep 1
+        echo
+        apt-get install apache2
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "21" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando SSH Service..."
+        sleep 1
+        echo
+        apt-get install ssh
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "22" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando SET (Setoolkit)..."
+        sleep 1
+        echo
+        apt-get install set
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "23" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando STARTX..."
+        sleep 1
+        echo
+        apt-get install x-window-system
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "24" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Airmode..."
+        sleep 1
+        echo
+        apt-get install airmode
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "25" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Armitage..."
+        sleep 1
+        echo
+        apt-get install armitage
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "26" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Burpsuite..."
+        sleep 1
+        echo
+        apt-get install burpsuite
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "27" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando w3af..."
+        sleep 1
+        echo
+        apt-get install w3af
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "28" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando John..."
+        sleep 1
+        echo
+        apt-get install john
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "29" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando p0f..."
+        sleep 1
+        echo
+        apt-get install p0f
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "30" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando HexChat..."
+        sleep 1
+        echo
+        apt-get install hexchat
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "31" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando SQLMap..."
+        sleep 1
+        echo
+        apt-get install sqlmap
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "32" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando WpScan..."
+        sleep 1
+        echo
+        apt-get install wpscan
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "99" ]
+    then
+	clear
+	exit;
+
+
+
+elif [ "$opcao" = "33" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Nikto..."
+        sleep 1
+        echo
+        apt-get install nikto
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "34" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando ou Baixando Xprobe2..."
+        sleep 1
+        echo
+        apt-get install xprobe2
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "35" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Atualizando Pacotes..."
+        sleep 1
+        echo
+        apt-get update
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "36" ]
+    then
+        sleep 1
+        clear
+        sleep 1
+        echo
+        echo "Fazendo Upgrade..."
+        sleep 1
+        echo
+        apt-get upgrade
+        echo "Programa atualizado ou Baixado com Sucesso !"
+        exit;
+
+elif [ "$opcao" = "99" ]
+    then
+	exit;
+
+
+
+elif [ "$opcao" = "37" ]
+    then
+	sleep 2
+	clear
+	sleep 1
+	echo 
+	echo "Atualizando ou Baixando Tudo..."
+	sleep 3
+	apt-get install aircrack-ng
+	echo -e " \033[01;32m[*] Aircarck-ng Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install mdk3
+	echo -e " \033[01;32m[*] Mdk3 Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install metasploit-framework
+	echo -e " \033[01;32m[*] Metasploit Framework Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install reaver
+	echo -e " \033[01;32m[*] Reaver Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install wifite
+	echo -e " \033[01;32m[*] Wifite Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install tor
+	echo -e " \033[01;32m[*] TOR Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install iptraf
+	echo -e " \033[01;32m[*] IpTraf Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install nmap
+	echo -e " \033[01;32m[*] Nmap Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install maltego
+	echo -e " \033[01;32m[*] Maltego Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install hping3
+	echo -e " \033[01;32m[*] Hping3 Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install t50
+	echo -e " \033[01;32m[*] T50 Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install wireshark
+	echo -e " \033[01;32m[*] Wireshark Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install netdiscover
+	echo -e " \033[01;32m[*] NetDiscover Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install anonsurf
+	echo -e " \033[01;32m[*] Anon-Surf Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install tor-socks
+	echo -e " \033[01;32m[*] Tor-Socks Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install mitmproxy
+	echo -e " \033[01;32m[*] Mitm-Proxy Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install hydra
+	echo -e " \033[01;32m[*] Hydra Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install ettercap-graphical
+	echo -e " \033[01;32m[*] Ettercap Graphical Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install websploit
+	echo -e " \033[01;32m[*] Websploit Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install apache2
+	echo -e " \033[01;32m[*] Apache Server Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install ssh
+	echo -e " \033[01;32m[*] SSH Service Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install x-window-system
+	echo -e " \033[01;32m[*] STARTX Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install airmode
+	echo -e " \033[01;32m[*] Airmode Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install armitage
+	echo -e " \033[01;32m[*] Armitage Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install burpsuite
+	echo -e " \033[01;32m[*] Burpsuite Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install w3af
+	echo -e " \033[01;32m[*] w3af Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install john
+	echo -e " \033[01;32m[*] John Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install p0f
+	echo -e " \033[01;32m[*] p0f Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install hexchat
+	echo -e " \033[01;32m[*] HexChat Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install sqlmap
+	echo -e " \033[01;32m[*] SQLMap Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install wpscan
+	echo -e " \033[01;32m[*] WpScan Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install nikto
+	echo -e " \033[01;32m[*] Nikto Baixado ou Atualizado com Sucesso!\033[01;32m"
+	apt-get install xprobe2
+	echo -e " \033[01;32m[*] Xprobe2 Baixado ou Atualizado com Sucesso!\033[01;32m"
+	echo
+	sleep 2
+	echo
+	echo -e " \033[01;32m[*] Atualizando Pacotes !\033[01;32m"
+	echo
+	apt-get update
+	echo
+	echo
+	sleep 2
+	echo -e " \033[01;32m[*] Fazendo Upgrade !\033[01;32m"
+	echo
+	apt-get upgrade
+	echo
+	echo
+	sleep 2
+	echo
+	echo
+	echo -e " \033[01;36m [#] Programas baixados ou Atualizados com Sucesso !!\033[01;36m"
+	echo -e " \033[01;36m [#] Encerrando Programa .. !!\033[01;36m"
+	echo
+	sleep 3
+	exit;
+
+
+else
+	echo "Entrada Invalida!"
+	exit;
+fi
